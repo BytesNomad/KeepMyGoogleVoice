@@ -3,10 +3,11 @@
 
 from six.moves import input
 from googlevoice import Voice
+import os
 
 def run():
     voice = Voice()
-    voice.login(email = "xxx@gmail.com", passwd = "xxx")
+    voice.login(email = os.environ.get('GMAIL'), passwd = os.environ.get("PASSWORD"))
 
     phoneNumber = "8336721001"
     text = "cloudflare.com"
