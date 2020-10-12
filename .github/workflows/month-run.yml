@@ -34,3 +34,7 @@ jobs:
         run: |
           pip install googlevoice
           python gv.py
+        env:
+          GMAIL: ${{secret.GMAIL}}
+          PASSWORD: ${{secret.PASSWORD}}
+
