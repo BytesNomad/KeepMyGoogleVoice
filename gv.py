@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-from six.moves import input
 from googlevoice import Voice
 import os
 
